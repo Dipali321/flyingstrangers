@@ -428,7 +428,7 @@ header {
 /* ------------------------ primary nav ------------------------ */
 
 #menu {
-         position: fixed;
+         position: absolute;
          top: 0;
          bottom: 0;
          width: 40%;
@@ -445,6 +445,7 @@ header {
         transition: 0.20s ease;
 		background-color:#202C48;
 		z-index:100;
+
 }
 
 #menu.active {
@@ -453,6 +454,7 @@ header {
         -o-transform: translate(-100%, 0px);
         -ms-transform: translate(-100%, 0px);
         transform: translate(-100%, 0px);
+ 
 }
 
 .pushme {
@@ -683,17 +685,17 @@ a.closemenu {
     position: relative;
 	max-width: 1500px;
 	overflow: hidden;
+	height: 485px;
 }
 
 #slideshow {
-	width: 100%;
 	margin: 0 auto;
-	overflow: hidden;
+	max-width: 1500px;
 }
 
 #slideshow img {
 	width: 100% !important;
-	height: auto !important;
+	height: 100% !important;
 	
 }
 
