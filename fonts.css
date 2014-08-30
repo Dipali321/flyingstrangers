@@ -22,3 +22,10 @@
 	src: url(fonts/TradeGothic-CondEighteen.otf);
 
 }
+
+
+@font-face {
+	font-family: CronicXLI;
+	src: url (fonts/ChronicleDisp-XLightItalic.otf);
+	font-style: italic;
+}
