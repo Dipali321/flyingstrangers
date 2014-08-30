@@ -1,17 +1,22 @@
 $(document).ready(function(){
-	$('#menu').hide();
-$(".menulink, .closemenu").click(function(){
-	if (true) {
-		$("#menu").hasClass("active");
-			$('#menu').show(100);
-	}
-	else {
-		$('#menu').hide();
-	}
+	
 
+$(".menulink").click(function(){
+	$('#menu').show(10);	
       $("#menu").toggleClass("active");
       $(".pushme").toggleClass("active");
+
 });
+
+$(".closemenu").click(function(){
+		$('#menu').hide(500);
+      $("#menu").toggleClass("active");
+      $(".pushme").toggleClass("active");
+
+});
+
+
+
 
 
 
