@@ -39,5 +39,15 @@ $(document).ready(function(){
 			});
 
 
+
+			// BOXES!
+			
+			$('.stickyinner').css('opacity', '0');
+			$('.stickybox').hover(function() {
+				$('.stickyinner').animate({'opacity': 1}, 300)
+			}, function() {
+				$('.stickyinner').animate({'opacity': 0}, 300)
+			});
+
 	
 });
