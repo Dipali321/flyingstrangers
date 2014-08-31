@@ -59,7 +59,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
    Links - EDIT
    ========================================================================== */
 
-a { color: #4c3f18; }
+a { color: #404041; }
 a:hover { text-decoration:none; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -239,7 +239,7 @@ div.aligncenter,.aligncenter{display:block;margin-left:auto;margin-right:auto}.a
 body { 
 	text-align:center; 
 	font: 100% "Times New Roman", Times, serif;
-	color: #4c3f18;
+	color: #59595B;
 }
 
 p {
@@ -820,7 +820,8 @@ a.viewnow:hover {
 	background: url("images/giantfish.svg") no-repeat scroll center center #f8f8f7;
 	margin-top: 60px;
 	background-attachment: fixed;
-	background-size:40%;
+	background-size:40% auto;
+	-webkit-background-size: 1024px auto;
  }
 
 .content ul {
@@ -835,35 +836,21 @@ a.viewnow:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 10px 0px;
 	clear: both;
 	font-weight: normal;
-	color: #6a6a20;
+	color: #58595B;
+	margin: 0;
 }
 
-.content h1 {
-	margin-top: 0;
-	font-size: 30px;
-	color: #673b2a;
-	font-style: italic;
-}
 
-.content h2 {
-	font-size: 26px;
-}
 
-.content h3 {
-	font-size: 24px;
-}
-
-.content h4, .content h5, .content h6 { font-size: 22px; }
 
 /* ------------------------ blog framework ------------------------ */
 
 .content article {
 	height: 100%;
     overflow: hidden;
-    padding: 6.5% 2.5%;
+	padding: 6.5% 0;
     width: 100%;
 }
 
@@ -892,6 +879,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	top: 20px;
 	width: 12.5%;
+	margin-left: 3%;
 }
 
 #contentNav p  {
@@ -966,7 +954,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mainBoxCol.first {
 	float: left;
-	margin-left: 12.3%;
+	margin-left: 15.3%;
 	margin-right: 6%;
 }
 .mainBoxCol.second {
@@ -1082,15 +1070,63 @@ p.stickysub {
 }
 
 .fullbox {
-	margin-left: 12.3%;
+	margin-left: 15.6%;
     width: 81%;
     margin-bottom: 3%;
 }
 
 .boxthreefull{
 	position: relative;
-	left: 12.3%;
+	left: 15.6%;
 }
+
+
+/* ------------------------ SINGLE framework ------------------------ */
+
+
+.meta {
+	text-transform: uppercase;
+	width: 100%;
+	
+}
+.backarrow {
+	float: left;
+	text-decoration: none;
+	vertical-align: middle				;
+}
+
+.backarrow span {
+	margin-top: 5px;
+	font-family: TradeCond, sans-serif;
+	font-size: 1.55em;
+	font-weight: 100;
+	vertical-align: middle;
+	margin-left: 22px;
+}
+
+
+.title {
+	   display: block;
+    float: left;
+    font-family: Chronical-Ital,serif;
+    font-size: 1.55em;
+    line-height: 0;
+    margin: 13px 0 0 30px;
+}
+
+.metadate {
+    float: right;
+    font-family: TradeCond,sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.headline {
+  font-family: Chronical-Ital,sans-serif;
+    font-size: 2.9em;
+    margin-top: 66px;
+}
+
 
 /* ------------------------ form framework ------------------------ */
 
