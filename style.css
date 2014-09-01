@@ -1128,6 +1128,120 @@ p.stickysub {
 }
 
 
+/*VIDEO PLAYER*/
+
+#video-controls {
+	background-color: #202F47;
+	width: 100%;
+	height: 40px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+/*VIDEO PLAY*/
+
+#play-pause{
+	background: none;
+	border: none;
+	color: #6D7B8C;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 25%;
+	left: 2%;
+
+}
+
+/*VIDEO MUTE FULL*/
+
+#video-controls button {
+	background: none;
+	border: none;
+}
+
+#mute {
+	position: absolute;
+	top: 25%;
+	right: 4%;
+}
+
+#full-screen {
+	position: absolute;
+	top: 25%;
+	right: 1%;
+}
+
+/*VIDEO SLIDER*/
+
+/*FIREFOX*/ 
+input[type=range]{
+    /* fix for FF unable to apply focus style bug  */
+    border: 1px solid #202F47; 
+
+    /*required for proper track sizing in FF*/
+    width: 85%;
+    
+
+    
+    -webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    background: #152031;
+    border: none;
+}
+
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #E8122A;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid #202F47;
+    outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #6D7B8C;
+}
+
+
+/*WEBKIT*/ 
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: #152031;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+ -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+   background: #E8122A;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+
+
 /* ------------------------ form framework ------------------------ */
 
 
