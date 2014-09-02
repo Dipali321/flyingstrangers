@@ -50,89 +50,101 @@ $(document).ready(function(){
 			});
 			
 			
+			$('.rboxwrap').css('opacity', '0');
+			$('.recentBoxes p ').hover(function() {
+				
+				$(this).find(".rboxwrap").animate({'opacity': 1}, 300)
+
+			}, function() {
+
+				$(this).find(".rboxwrap").animate({'opacity': 0}, 300)
+
+			});
+			
+			
+			// homepage boxes hover
+			$('.boxsizeone').hover(function() {
+				$(this).find(".boxonestickyinner").animate({'opacity': 1}, 300)
+			}, function() {
+				$(this).find(".boxonestickyinner").animate({'opacity': 0}, 300)
+			});
+			
+			$('.boxsizetwo').hover(function() {
+				$(this).find(".boxtwostickyinner").animate({'opacity': 1}, 300)
+			}, function() {
+				$(this).find(".boxtwostickyinner").animate({'opacity': 0}, 300)
+			});
+			
+			$('.boxsizefour').hover(function() {
+				$(this).find(".boxfourstickyinner").animate({'opacity': 1}, 300)
+			}, function() {
+				$(this).find(".boxfourstickyinner").animate({'opacity': 0}, 300)
+			});
+			
+			$('.boxsizethree').hover(function() {
+				$(this).find(".boxfourstickyinner").animate({'opacity': 1}, 300)
+			}, function() {
+				$(this).find(".boxfourstickyinner").animate({'opacity': 0}, 300)
+			});
+			
+			$('.fullbox').hover(function() {
+				$(this).find(".boxfullstickyinner").animate({'opacity': 1}, 300)
+			}, function() {
+				$(this).find(".boxfullstickyinner").animate({'opacity': 0}, 300)
+			});
 			
 			
 			
-			// VIDEO!
-			window.onload = function() {
-
-			  // Video
-			  var video = document.getElementById("video");
-
-			  // Buttons
-			  var playButton = document.getElementById("play-pause");
-			  var muteButton = document.getElementById("mute");
-			  var fullScreenButton = document.getElementById("full-screen");
-
-			  // Sliders
-			  var seekBar = document.getElementById("seek-bar");
-			  var volumeBar = document.getElementById("volume-bar");
-			  
-			  
-			  
-  			// Event listener for the play/pause button
-  			playButton.addEventListener("click", function() {
-  			  if (video.paused == true) {
-  			    // Play the video
-  			    video.play();
-
-  			    // Update the button text to 'Pause'
-  			    playButton.innerHTML = "||";
-  			  } else {
-  			    // Pause the video
-  			    video.pause();
-
-  			    // Update the button text to 'Play'
-  			    playButton.innerHTML = "&#9654;";
-  			  }
-  			});
+		// grid to list
+		
+		$('#listSearch').click(function(event) {
+			event.preventDefault();
+			 $('#catbox div img').hide();
+			$('#catbox div img').animate({opacity:0}, 300);
+			$('.listy').hide();
+			$('.boxthreefull').css('left', 0);
+			$('#catbox').css('margin-top', '40px');
 			
-  			// Event listener for the full-screen button
-  			fullScreenButton.addEventListener("click", function() {
-  			  if (video.requestFullscreen) {
-  			    video.requestFullscreen();
-  			  } else if (video.mozRequestFullScreen) {
-  			    video.mozRequestFullScreen(); // Firefox
-  			  } else if (video.webkitRequestFullscreen) {
-  			    video.webkitRequestFullscreen(); // Chrome and Safari
-  			  }
-  			});
+		}); 
+		
+		$('#gridSearch').click(function(event) {
+			event.preventDefault();
+			$('#catbox div img').show();
+			$('.boxthreefull').css('left', '15.3%');
+			$('#catbox').css('margin-top', '0px');
+			$('#catbox div img').animate({opacity:1}, 300);
+			$('.listy').show();
 			
-  			// Event listener for the seek bar
-  			seekBar.addEventListener("change", function() {
-  			  // Calculate the new time
-  			  var time = video.duration * (seekBar.value / 100);
-
-  			  // Update the video time
-  			  video.currentTime = time;
-  			});
 			
-  			// Update the seek bar as the video plays
-  			video.addEventListener("timeupdate", function() {
-  			  // Calculate the slider value
-  			  var value = (100 / video.duration) * video.currentTime;
-
-  			  // Update the slider value
-  			  seekBar.value = value;
-  			});
+		}); 
 			
-  			// Pause the video when the slider handle is being dragged
-  			seekBar.addEventListener("mousedown", function() {
-  			  video.pause();
-  			});
-
-  			// Play the video when the slider handle is dropped
-  			seekBar.addEventListener("mouseup", function() {
-  			  video.play();
-  			});
 			
-  			// Event listener for the volume bar
-  			volumeBar.addEventListener("change", function() {
-  			  // Update the video volume
-  			  video.volume = volumeBar.value;
-  			});
+			
 
-			}
+		// VIDEO MODAL
+		$('.modalvideo').css('opacity', 0);
+		$('.videoLink').click(function(event) {
+			event.preventDefault();
+			
+			$('.modalvideo').insertAfter( $('.videoHolder') );
+			$('.modalvideo').animate({opacity: 1}, 800);
+			$('.modalvideo').siblings().hide();
+			
+			$('.modalvideo').hover(function() {
+				$('.modalclose').css('opacity', 0)
+				$('.modalclose').animate({opacity: 1}, 800);
+				$('.modalclose').click(function(event) {
+					$('.modalvideo').siblings().show();
+					$('.modalvideo').animate({opacity: 0}, 800);
+					$('.modalvideo').hide();
+				});
+			}, function() {
+				$('.modalclose').animate({opacity: 0}, 800);
+				$('.modalvideo').siblings().show();
+			});
+			
+			
+		});
 			
 	
 

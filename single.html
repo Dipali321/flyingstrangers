@@ -12,15 +12,21 @@
 	<meta name="google-site-verification" content="REPLACE" />
 
 	<title>Title</title>
-	
+	<link href="http://vjs.zencdn.net/4.7/video-js.css" rel="stylesheet">	
+	<link rel="stylesheet" href="fonts.css" media="screen" />
 	<link rel="stylesheet" href="style.css" media="screen" />
 	<link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
 	<!-- <link rel="stylesheet" href="menu.css" media="screen" /> -->
-	<link rel="stylesheet" href="fonts.css" media="screen" />
+
+
+	
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="js/libs/modernizr-2.5.3.min.js"></script>
-		
+
+
+<script src="http://vjs.zencdn.net/4.7/video.js"></script>		
+
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -68,7 +74,7 @@
 
 
 	<section class="content container-1024 ">
-		<article>
+		<article id="thetop">
 			<div class="container-980">
 			<div class="meta clearfix">
 				<a href="" class="backarrow"><img src="images/backarrow.png" alt="" class="" /> <span>Back</span></a>
@@ -77,9 +83,9 @@
 			</div>
 
 			<h1 class="headline">Exclusive Eric Koston interview</h1>
-					<div id="video-container">
+					
 					  <!-- Video -->
-					  <video id="video" width="980" height="551">
+					  <video id="video" width="980" height="551" class="video-js vjs-default-skin vjs-big-play-centered" data-setup="{}" controls preload="none" poster="images/poster.jpg">
 					    <source src="videos/test.ogg" type="video/ogg">
 					    <source src="videos/test.mp4" type="video/mp4">
 					    <p>
@@ -87,16 +93,69 @@
 					      <a href="videos/mikethefrog.mp4">Download</a> the video instead.
 					    </p>
 					  </video>
-					  <!-- Video Controls -->
-					  <div id="video-controls">
-					    <button type="button" id="play-pause">&#9654;</button>
-					    <input type="range" id="seek-bar" value="0">
-					    <button type="button" id="mute"><img src="images/mute.png" width="30" height="21" alt="Mute"></button>
-					    <!-- <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1"> -->
-					    <button type="button" id="full-screen"><img src="images/fullscreen.png" width="24" height="21" alt="Fullscreen"></button>
-					  </div>
+					  <div class="videoExcerpt"><p>Footage: Sam Ashley/Atiba Jefferson</p></div>
+						<!-- VIDEO -->	  
+					
+					
+					<div class="contextQuote">
+						<p>Thanks to the wonderful world of social media I’m sure all of you already know about the Koston 2 shoe launch Nike organised in London a few weeks ago. Well not only did they kindly invite us to the event, which for me meant spending the afternoon drinking beer, skating an indoor bowl and playing mini-golf rather than staring at my computer screen, but they managed to fit us into Eric Koston’s tight schedule for a 30 minute interview. I think it’s fair to say that he’s one of the, if not the professional skateboarders who get’s the most media attention, so meeting him in person was quite a strange experience as I’m sure you can imagine. Not just because it was intimidating, (although I was indeed shitting myself) but also because knowing so much about the guy without having actually having met him felt very strange.</p>
 					</div>
+					
+					<div class="context">
+						<p>Until now I had always been the first to complain about the “marketable personalities” the skate industry creates for some of our favourite pros. It has nothing to do with whether or not I think the “stoner guy” or “hyperactive/loud guy” images are genuine, it’s just that what gets me stoked on a certain skater is his approach to skating and the way he’ll push or kickflip, not how he’ll act off his board (a little paradoxical for someone working for a skate magazine I know…) Anyway, meeting Koston made me change my position on this. Can you imagine how difficult it must be for these rock star status pros to keep their public and private spheres separate? Having a bit of a “funny guy” persona to hide behind actually sounds like a pretty good way of not exposing too much of yourself.
+						</p>
+<p>There’s evidently a lot more to the man than what we can gather from seeing him clown around in Chomp On This or read out the rules at The Berrics. Whether or not it’s something that can or should be explored in interviews is a different story…</p>
+<p><img src="images/contextimg.jpg" width="980" alt="Contextimg"></p>
+						
+						
+						
+						<h2>Hi Eric, can you briefly tell us what brings you to London?</h2>
 
+<p>						I’m here for the Koston 2 launch event that Nike Europe have organised… They’ve put together a little mini-golf course so it should be fun!</p>
+
+ 
+						<h2>Have you been going all around Europe for these launch events or is it the first stop?</h2>
+
+						<p>Well I did a big one in L.A and kind of a soft one at Tampa Pro where we premiered the commercial and released the pink shoe but this is the only one I’m attending in Europe.</p>
+
+
+						<h2>You obviously play a major role in the promotion of a shoe but how involved are you in it’s actual production/conception? What about with other products?</h2>
+
+						<p>I’m actually really involved with the production/conception process of quite a lot of other products, particularly with Fourstar. We aren’t a huge brand so when it comes to manufacturing we can’t go for anything too expensive though. Basically we try to find the best materials we can within our budget and adapt our prices to our customers. Skateboarders aren’t exactly rich right? Well a small percentage probably are but I guess we don’t take them into account… Of course there are always products where we push the envelope a little bit, but we are usually quite careful. We’ve created a template that we run by.</p>
+
+						<h2>When, it comes to designing shoes it’s very different though, I’m involved in every step of the process. Have you had a chance to visit the factories that make your shoes then?</h2>
+
+						<p>No I haven’t actually, it’s the only thing I haven’t had a chance to do yet. I’ve met the owner of the factory though, he’s a pretty funny guy. I actually know a few of the guys that there, I’ve been meeting them at the Nike headquarters in Portland every now and then.Do they know anything about skateboarding?</p>
+
+						<p>They do to a certain extent; I mean they really try to get it you know? They even built a ramp in the factory! It’s actually quite a funny story. So the factory is in Taiwan and originally this guy Lorenzo that works for Nike sent plans for a miniramp out there because they wanted to build something to teach employees how to skate. That way they would understand what they are making. So he sent them plans for a small mini ramp, thinking it would be ideal: they would learn how to drop in and then work their way up from there. You don’t start on a vert ramp right? So they started building it but the owner of the factory thought it looked too small and decided to tell the guys building it to make it taller without consulting anyone else. A little while later one of the guys who takes care of choosing materials for the factories (he’s a skater, he used to work at Girl warehouse years ago when we first started) went out there. Apparently he showed up at the factory and saw the ramp and was like “ what the fuck is this?! Why did you build a huge vert ramp?!” I think it wasn’t even a well-made vert ramp either; it was some weird-looking dangerous vert ramp.</p>
+						
+					<p class="meta">TAGS// NIKE SB . ERIC KOSTON. FOURSTAR<br>LOS ANGELES, CA | PHOTO: ATIBA JEFFERSON</p>
+					</div> <!-- CONTEXT -->
+					
+					<p class="backtotop"><a href="#thetop"><img class="" alt="" src="images/backarrow.png"> <span>Back to top</span></a></p>
+					
+					<hr class="fsGray">
+					
+					<div class="readMoreSingle">
+						<p class="recent">Recent | View More</p>
+						<div class="recentBoxes">
+							<p><img src="images/recent.jpg" width="303"  alt="Recent"><span class="rboxwrap"><span>JERRY HSU DITCHIN'<br>In Photographs</span></span></p>
+							<p><img src="images/recent.jpg" width="303"  alt="Recent"><span class="rboxwrap"><span>JERRY HSU DITCHIN'<br>In Photographs</span></span></p>
+							<p><img src="images/recent.jpg" width="303"  alt="Recent"><span class="rboxwrap"><span>JERRY HSU DITCHIN'<br>In Photographs</span></span>	</p>													
+						</div>
+					</div>
+					
+					<hr class="fsGray">
+					
+					<div class="relatedSingle">
+						<p class="recent">Related | View More</p>
+						<div class="recentBoxes">
+							<p><img src="images/recent.jpg" width="303"  alt="Recent"><span class="rboxwrap"><span>JERRY HSU DITCHIN'<br>In Photographs</span></span></p>
+							<p><img src="images/recent.jpg" width="303"  alt="Recent"><span class="rboxwrap"><span>JERRY HSU DITCHIN'<br>In Photographs</span></span></p>
+							<p><img src="images/recent.jpg" width="303"  alt="Recent"><span class="rboxwrap"><span>JERRY HSU DITCHIN'<br>In Photographs</span></span></p>												
+						</div>
+					</div>
+					
 		</div> <!-- 980 -->
 
 			
@@ -110,7 +169,6 @@
 	</footer>
 </div>
 </div><!-- push me -->
-
 		
 	<!-- Enqueued JavaScript at the bottom for fast page loading -->
 	<script src="js/libs/jquery.cycle.js"></script>
