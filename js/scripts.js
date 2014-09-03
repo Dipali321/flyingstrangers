@@ -1,9 +1,23 @@
 $(document).ready(function(){
 	
 	// Fancybox
-	// $("a.fancybox").fancybox({
-	// 	'titlePosition'  : 'inside'
-	// });
+	$("a.fancybox")
+	    .attr('rel', 'video')
+	    .fancybox({
+			
+	        openEffect  : 'none',
+	        closeEffect : 'none',
+	        nextEffect  : 'none',
+	        prevEffect  : 'none',
+	        padding     : 0,
+		    tpl: {
+				next     : '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
+				prev     : '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
+		    }
+	       
+		
+
+	    });
 	
 	// Toggle menu
 	
@@ -122,27 +136,37 @@ $(document).ready(function(){
 			
 
 		// VIDEO MODAL
+		$('.modalvideo').hide();
 		$('.modalvideo').css('opacity', 0);
 		$('.videoLink').click(function(event) {
 			event.preventDefault();
 			
 			$('.modalvideo').insertAfter( $('.videoHolder') );
+			$('.modalvideo').show();
 			$('.modalvideo').animate({opacity: 1}, 800);
+			
 			$('.modalvideo').siblings().hide();
 			
 			$('.modalvideo').hover(function() {
-				$('.modalclose').css('opacity', 0)
+
+				$('.modalclose').css('opacity', 0);
 				$('.modalclose').animate({opacity: 1}, 800);
+				
 				$('.modalclose').click(function(event) {
-					$('.modalvideo').siblings().show();
+				
 					$('.modalvideo').animate({opacity: 0}, 800);
-					$('.modalvideo').hide();
+					
+					setTimeout(function() {
+						$('.modalvideo').hide();
+						$('.modalvideo').siblings().show();
+					}, 1000);
+
 				});
+				
 			}, function() {
 				$('.modalclose').animate({opacity: 0}, 800);
-				$('.modalvideo').siblings().show();
 			});
-			
+
 			
 		});
 			
