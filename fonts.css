@@ -15,6 +15,14 @@
 	
 }
 
+@font-face {
+	font-family: Chronicalbold;
+	src: url(fonts/ChronicleDisp-Bold.otf);
+	font-style:normal;
+	font-weight:bold;
+	
+}
+
 
 
 @font-face {

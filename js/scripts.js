@@ -18,6 +18,26 @@ $(document).ready(function(){
 		
 
 	    });
+		
+		
+// stickicky
+
+$('.stuckem').waypoint('sticky', {
+  direction: 'down',
+  stuckClass: 'stuck',
+  wrapper: '<div class="filter-wrapper"  />',
+	}
+);
+
+$(".stuckem").waypoint(function(){
+    $(this).css('padding-top', '125px');    
+},{offset:'126px'});
+
+$(".stuckem").waypoint(function(){
+    $(this).css('padding-top', ' 0');    
+},{offset:'128px'});
+
+  
 	
 	// Toggle menu
 	
@@ -33,24 +53,31 @@ $(document).ready(function(){
 	
 	// Slideshow
 
-		var slides = $("#slideshow");
+		// var slides = $("#slideshow");
+//
+//
+// 			slides.cycle({
+// 			    fx:     'fade',
+// 			    speed:  1000,
+// 			    timeout: 8000,
+// 			    pager:  '#slide-nav',
+// 				width: '100%',
+// 				height: '100%',
+// 				fit: true,
+// 			    next:   '#next',
+// 			    prev:   '#prev',
+// 				after:function (curr, next, opts) {
+// 								    var caption = '<p class="slideoutput"><span class="line"></span> ' + "0"+(opts.currSlide + 1) + ' &#x02758; ' + "0"+opts.slideCount + "</p>";
+// 									$('#output').html(caption);
+// 								}
+// 			});
+// 
 
 
-			slides.cycle({
-			    fx:     'fade',
-			    speed:  1000,
-			    timeout: 8000,
-			    pager:  '#slide-nav',
-				width: '100%',
-				height: '100%',
-				fit: true,
-			    next:   '#next',
-			    prev:   '#prev',
-				after:function (curr, next, opts) {
-								    var caption = '<p class="slideoutput"><span class="line"></span> ' + "0"+(opts.currSlide + 1) + ' &#x02758; ' + "0"+opts.slideCount + "</p>";
-									$('#output').html(caption);
-								}
-			});
+// $( '#slideshow' ).on( 'cycle-before', function(event, opts, slideNum,slideCount ) {
+// 	var caption1 = '<p class="slideoutput"><span class="line"></span>' + "0"+ slideNum  + ' &#x02758; ' + "0"+ slideCount+ "</p>";
+// 	$('#output').html(caption1);
+// });
 
 
 

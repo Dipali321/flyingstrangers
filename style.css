@@ -399,10 +399,13 @@ cite:before {
 .fsheaderblue {
 	color: #15203A;
 	background-color: #15203A;
+	position: fixed;
+	z-index: 3000;
 }
 .fsGray {
 	background-color: #f8f8f7;
 	color: #f8f8f7;
+	padding-top: 125px;
 }
 
 hr.fsGray {
@@ -497,9 +500,9 @@ h2.cattitle {
 /* ------------------------ header framework ------------------------ */
 
 header {
-	height: 136px;
+	height: 125px;
 	position: relative;
-	background-color: #15203a;
+	background-color: #15203A;
 
 }
 
@@ -545,16 +548,14 @@ header {
         -o-transform: translate(-100%, 0px);
         -ms-transform: translate(-100%, 0px);
         transform: translate(-100%, 0px);
+        position: fixed;
+        z-index: 4000;
         
  
 }
 
 .pushme {
-       -webkit-transform: translate(0px, 0px);
-       -moz-transform: translate(0px, 0px);
-       -o-transform: translate(0px, 0px);
-       -ms-transform: translate(0px, 0px);
-       transform: translate(0px, 0px);
+      
         -webkit-transition: 0.20s ease;
         -moz-transition: 0.20s ease;
         -o-transition: 0.20s ease;
@@ -562,21 +563,15 @@ header {
 }
 
 .pushme.active {
-       -webkit-transform: translate(-5%, 0px);
-       -moz-transform: translate(-5%, 0px);
-       -o-transform: translate(-5%, 0px);
-       -ms-transform: translate(-5%, 0px);
-       transform: translate(-5%, 0px);
+       
 }
    
    
 .menulink {
-    float: right;
+      float: right;
       margin-top: 65px;
       position: relative;
       right: 7%;
-	  
-	
 }
    
 span.menulink {
@@ -602,8 +597,8 @@ span.menulink {
 
    span.menulink span.line {
        display: block;
-       width: 45px;
-       height: 2px;
+       width: 35px;
+       height: 3px;
        top: 50%;
        margin-top: -8px;
        margin-left: 5px;
@@ -618,16 +613,16 @@ span.menulink {
    span.menulink span:after {
 	   background: none repeat scroll 0 0 #E61131;
 	    content: " ";
-	    height: 2px;
-	    margin-top: -15px;
+	    height: 3px;
+	    margin-top: -10px;
 	    position: absolute;
-	    width: 45px;
+	    width: 35px;
 	    transition:background .5s ease;
 
    }
 
    span.menulink span:after {
-       margin-top: 15px;
+       margin-top: 10px;
    }
 
 
@@ -773,26 +768,27 @@ a.closemenu {
 /* ------------------------ SLIDESHOW ------------------------ */
 
 .slidewrap {
-	margin: 0 auto;
+    display: block;
+    height: 768px;
+    margin: 0 auto;
+    max-width: 1650px;
+    overflow: hidden;
     padding: 0;
     position: relative;
-	max-width: 1500px;
-	overflow: hidden;
-	height: 485px;
-	display: block;
 }
 
 #slideshow {
 	margin: 0 auto;
-	max-width: 1500px;
 	overflow: hidden;
-
 }
 
 #slideshow img {
 	height: 100%;
 	width: auto;
 }
+
+.cycle-slideshow { width: 100% }
+
 
 
 
@@ -806,7 +802,7 @@ a.closemenu {
 	text-indent: -9999px;
 	display: block;
 	position: absolute;
-	z-index: 100;
+	z-index: 1000;
 	top: 50%;
 	cursor: pointer;
 }
@@ -822,27 +818,28 @@ a.closemenu {
 
 .slide	{
 	position: relative;
-	height: 485px;
+	max-height: 768px;
 	display: block;
+	width: 100%;
 }
 
 .slidetext {
 	position: absolute;
     left: 50%;
-	top: 60%;
+	top: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    width: 90%;
+    width: 100%;
 
 }
 
 .slidetext h2 {
 	margin: 0;
 	color: white;
-	font-size: 4.0em;
-	font-family: 'Chronical-Ital', serif;
+	font-size: 5.69em;
+	font-family: 'Chronicalbold', serif;
 	line-height: 30px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .subtext {
@@ -877,7 +874,7 @@ a.viewnow:hover {
     color: white;
     position: absolute;
     right: 10%;
-    z-index: 200;
+    z-index: 1000;
 }
 
 .slideoutput {
@@ -900,17 +897,12 @@ a.viewnow:hover {
 /* ------------------------ content framework ------------------------ */
 
 
-
 .content {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background: url("images/giantfish.svg") no-repeat scroll center center #f8f8f7;
-	margin-top: 60px;
-	background-attachment: fixed;
-	background-size:40% auto;
-	-webkit-background-size: 1024px auto;
+	background: #f8f8f7;
  }
 
 .content ul {
@@ -962,20 +954,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* CONTENT NAV */
+/* FILTER NAV */
+.stuckem.stuck {
+      position: fixed;
+    top: 0;
+    z-index: 1000;
+   
+}
+
+#subfilter {
+	background: white;
+	max-width: 1024px;
+	display: block;
+	height: 80px;
+
+}
+
+
+
+
 #contentNav {
-	float: left;
-	position: relative;
-	top: 20px;
-	width: 12.5%;
-	margin-left: 3%;
+
+	width: 100%;
+
 }
 
 #contentNav p  {
-	font-family: Chronical-Lital;
-	font-size: 1.375em;
-	color: #A6A8AB;
-	text-decoration: none;
+    color: #a6a8ab;
+    display: inline-block;
+    font-family: Chronical-Lital;
+    font-size: 1.375em;
+    text-decoration: none;
 }
 
 #contentNav p a {
@@ -996,7 +1005,7 @@ h1, h2, h3, h4, h5, h6 {
 .cnHeader {
   border-bottom: 1px solid #a6a8ab;
   text-transform: capitalize;
-  width: 80px;
+
 }
 
 
