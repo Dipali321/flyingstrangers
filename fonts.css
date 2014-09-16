@@ -25,15 +25,31 @@
 
 
 
-@font-face {
-	font-family: TradeCond;
-	src: url(fonts/TradeGothic-CondEighteen.otf);
 
-}
 
 
 @font-face {
 	font-family: CronicXLI;
 	src: url (fonts/ChronicleDisp-XLightItalic.otf);
 	font-style: italic;
+}
+
+@font-face {
+	font-family: TradeCond;
+	src: url('fonts/TradeGothicLTCom-Cn18.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'TradeBold';
+    src: url('fonts/tradegothic-boldcondtwenty.eot');
+    src: url('fonts/tradegothic-boldcondtwenty.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tradegothic-boldcondtwenty.woff2') format('woff2'),
+         url('fonts/tradegothic-boldcondtwenty.woff') format('woff'),
+         url('fonts/tradegothic-boldcondtwenty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }

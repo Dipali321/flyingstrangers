@@ -29,15 +29,37 @@ $('.stuckem').waypoint('sticky', {
 	}
 );
 
-$(".stuckem").waypoint(function(){
-    $(this).css('padding-top', '125px');    
-},{offset:'126px'});
 
 $(".stuckem").waypoint(function(){
-    $(this).css('padding-top', ' 0');    
+    $(this).css('top', '125px');    
+},{offset:'80px'});
+
+$(".stuckem").waypoint(function(){
+    $(this).css('top', ' 0');
 },{offset:'128px'});
 
   
+
+// SEARCH BOX
+
+$('.whiteslice').click(function(event) {
+	event.preventDefault();
+	$('.hiddensearch').removeClass('off');
+	$('.hiddensearch').addClass('on').animate({'opacity':'1'}, 400);
+	
+});
+
+$('.closesearch').click(function(event) {
+	event.preventDefault();
+	
+	$('.hiddensearch').animate({'opacity':'0'}, 400, function() {
+		$('.hiddensearch').removeClass('on');
+		$('.hiddensearch').addClass('off');
+	});
+});
+
+// SEARCH BOX
+
 	
 	// Toggle menu
 	

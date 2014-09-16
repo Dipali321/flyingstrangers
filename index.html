@@ -39,11 +39,6 @@
 	       <li><a href="#">Press</a></li>
 	       <li><a href="#">Strangers</a></li>
 	    </ul>
-		<form action="index_submit" method="post" accept-charset="utf-8">
-			
-			<input type="text" name="search" value="" id="search">
-
-		</form>
 		
 		<div class="menusocial">
 			<img src="images/facebook.svg" alt="" class="" />
@@ -82,7 +77,7 @@
 
 
 		<div id="slideshow" class="cycle-slideshow" data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-slides="> div.slide" data-cycle-caption="#output"
-    data-cycle-caption-template="<p class='slideoutput'><span class='line'></span> 0{{slideNum}} &#x02758; 0{{slideCount}}">
+    data-cycle-caption-template="<p class='slideoutput'><span class='line'></span> 0{{slideNum}} &#x02758; 0{{slideCount}}" data-cycle-auto-height="calc">
 		  	
 				<div class="slide">
 					<div class="slidetext">
@@ -114,12 +109,22 @@
 	<div id="subfilter">
 		<div id="contentNav">
 			<p class="cnHeader">FILTER:</p>
-			<p><a href="">All</a></p>
+			<p><a href="" class="selected">All</a></p>
 			<p><a href="">Video</a></p>
 			<p><a href="">Photo</a></p>
 			<p><a href="">Press</a></p>
 			<p><a href="">Strangers</a></p>
+			<p><a href="#" class="whiteslice"><img src="images/whiteslice.jpg" alt="" class="" /></a></p>
+			
+			<form action="index_submit" method="post" accept-charset="utf-8" class="hiddensearch">
+				<div class="formwrapper">
+					<input type="text" name="search" value="" id="search">
+					<button type="submit" class="search_btn"><img src="images/whiteslice.png" title="Search" /></button>
+					<a href="#" class="closesearch"><img src="images/closesearch.png" title="close"  /></a>
+				</div>
 
+			</form>
+			
 		</div>
 	</div>
 </div>
