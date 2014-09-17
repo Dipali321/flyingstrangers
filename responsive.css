@@ -1,0 +1,148 @@
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 1281px) {
+	.menuwrap {width:50%;}
+	
+}
+
+@media only screen and (min-width: 1025px) {
+	#slideshow img {
+		width:auto ;
+		height: 100%;
+	}
+
+	}
+
+@media only screen and (max-width: 980px) {
+	 
+  	/* Tablet */
+
+	body {
+		min-width: 767px;
+	}
+  
+	.visible-tablet {
+		display: block !important;
+ 	}
+ 	
+	.hidden-tablet {
+  		display: none !important;
+ 	}
+		
+	.container-980  {
+		max-width: 767px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+	}
+	
+	.img-left, .alignleft, .img-right, .alignright, .alignnone {
+	    max-width: 45%!important;
+    	height: auto;
+  	}
+
+	.aligncenter {
+    	display: block;
+    	float: none;
+    	max-width: 100%!important;
+    	height: auto;
+    	text-align: center;
+    	margin: 0 auto 15px auto;
+	}
+	
+	.full-size {
+		display: block!important;
+		margin: 0 auto 15px auto!important;
+		max-width: 100%!important;
+		width: 100%!important;
+	}
+	
+	/*----- Nav -----*/
+	
+	
+	
+	/*----- content -----*/
+	
+	#slideshow {
+		max-width: 767px;
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	
+	/* Phone */
+	
+	body {
+		min-width: 320px;
+	}
+	
+	.container-980  {
+		min-width: 320px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+	}
+   
+	.hidden-phone { display: none!important; }
+	.visible-phone { display: block!important; }
+  
+ 	.img-left, .alignleft, .img-right, .alignright, .alignnone {
+    	display: block;
+    	float: none;
+    	max-width: 100% !important;
+    	height: auto;
+    	text-align: center;
+    	margin: 0 auto 15px auto!important;
+	}	
+	
+  	.wp-caption {
+    	padding: 5px;
+    	max-width: 46%;
+  	}
+	
+	.wp-caption.alignright {
+		margin-left: 2%;
+		max-width: 44%;
+	}
+	
+	.wp-caption.alignleft {
+		margin-right: 2%;
+		max-width: 44%;
+	}
+	
+  	.wp-caption img { 
+    	max-width: 100%;
+    	height: auto;
+  	}
+
+	/* ----- nav ----- */
+	
+
+	
+	/*----- content -----*/
+	
+	#slideshow {
+		display: none;
+	}
+	
+	/*----- aside -----*/
+	
+	aside {
+		width: auto;
+		display: block;
+	}
+
+	/*----- footer -----*/
+
+	footer {
+		display: block;
+	}
+
+}
+

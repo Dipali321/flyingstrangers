@@ -269,6 +269,13 @@ p {
 	text-align: left;
 }
 
+.container-1650 {
+	max-width: 1650px;
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+}
+
 
 .container-full {
 	width: 100%;
@@ -279,6 +286,8 @@ p {
 .clear	{ 
 	clear:both;
 }
+
+
 
 .header-clear { clear: none; }
 
@@ -638,6 +647,11 @@ span.menulink {
 
 	
 /*MENU*/ 
+
+.menuwrap {
+
+}
+
 a.closemenu {
 	width: 45px;
 	height: 45px;
@@ -652,9 +666,6 @@ a.closemenu {
 	height: 45px;
 }
 
-.menuwrap {
-	margin-left: 40px;
-}
 
 #menu *{
 	color: #A6A8AB;
@@ -662,28 +673,19 @@ a.closemenu {
 
 #menu a {
 	font-family: TradeCond;
-	font-size: 1.37em;
+	font-size: 44px;
 }
 
 
-#menu h2 {
-	font-family: Chronical-Lital;
-	font-size: 1.37em;
-	text-transform: uppercase;
-	text-align: left;
-	border-bottom: 1px solid #929497;
-	margin-bottom: 25px;
-	width: 65%;
-}
+
 
 #menu ul {
-	text-align: left;
+	text-align: center;
+	margin-top: 144px;
 }
 #menu ul li {
-  border-bottom: 1px solid #929497;
-    line-height: 30px;
-    margin-bottom: 20px;
-    width: 65%;
+    margin-bottom: 50px;
+    width: 100%;
 }
 
 .menuwrap ul li:last-child {
@@ -701,15 +703,18 @@ a.closemenu {
 
 	
 .menusocial	{
-	width: 65%;
-	text-align: left;
-	margin-top: 35%;
+	width: 100%;
+	text-align: center;
+
 }
 .menusocial img {
-	width: 30px;
-	height: auto;
+	width: 36px;
+	height: 36px;
 	display: inline-block;
 	vertical-align: text-top;
+}
+.menusocial img:first-child {
+	margin-right: 7%;
 }
 	
 /* ------------------------ dropdown nav ------------------------ */
@@ -880,6 +885,10 @@ a.viewnow:hover {
 }
 /* ------------------------ content framework ------------------------ */
 
+.borderwrap {
+    border-left: 70px solid white;
+    border-right: 70px solid white;
+}
 
 .content {
 	position: relative;
@@ -943,6 +952,7 @@ h1, h2, h3, h4, h5, h6 {
       position: fixed;
     top: 0;
     z-index: 1000;
+    background: white;
    
 }
 
@@ -969,6 +979,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: TradeBold;
     font-size: 1.125em;
     text-decoration: none;
+	text-transform: uppercase;
 }
 
 #contentNav p a {
@@ -1046,6 +1057,7 @@ width: 99.6%;
 
 #contentNav form button {
 	border: none;
+	background: none;
 }
 
 
@@ -1098,13 +1110,29 @@ width: 99.6%;
 .fancybox-skin {background:#fff;}
 /*BOXES*/
 
-.boxsizeone {
- float: left;
- width: 26.5%;
- margin-bottom: 1%;
- position: relative;
+
+.boxes {
+	max-width: 1024px;
+	margin: 0 auto;
+	text-align: center;
 }
 
+.boxsizeone {
+ float: left;
+ width:29%;
+ height: 400px;
+ margin-bottom: 1%;
+ position: relative;
+ margin-right: 36px;
+}
+
+.boxsizeone:first-child {
+	margin-left: 18px;
+}
+
+.boxonelast {
+	margin-right: 0px;
+}
 .fullbox img,
 .boxsizeone img, 
 .boxsizetwo img,
@@ -1114,9 +1142,7 @@ width: 99.6%;
 	width: 100%;
 	height: auto;
 }
-.boxsizeone:not(last-child) {
-    margin-right: 1%;
-}
+
 
 
 .boxes p {
@@ -1752,149 +1778,6 @@ footer p { margin-bottom:10px; padding: 40px 0;}
 footer img {
 	display:block;
     margin:auto;
-}
-
-/* ==|== media queries ======================================================
-   EXAMPLE Media Query for Responsive Design.
-   This example overrides the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 1025px) {
-	#slideshow img {
-		width:auto ;
-		height: 100%;
-	}
-
-	}
-
-@media only screen and (max-width: 980px) {
-	 
-  	/* Tablet */
-
-	body {
-		min-width: 767px;
-	}
-  
-	.visible-tablet {
-		display: block !important;
- 	}
- 	
-	.hidden-tablet {
-  		display: none !important;
- 	}
-		
-	.container-980  {
-		max-width: 767px;
-		width: 100%;
-		margin: 0 auto;
-		text-align: left;
-	}
-	
-	.img-left, .alignleft, .img-right, .alignright, .alignnone {
-	    max-width: 45%!important;
-    	height: auto;
-  	}
-
-	.aligncenter {
-    	display: block;
-    	float: none;
-    	max-width: 100%!important;
-    	height: auto;
-    	text-align: center;
-    	margin: 0 auto 15px auto;
-	}
-	
-	.full-size {
-		display: block!important;
-		margin: 0 auto 15px auto!important;
-		max-width: 100%!important;
-		width: 100%!important;
-	}
-	
-	/*----- Nav -----*/
-	
-	
-	
-	/*----- content -----*/
-	
-	#slideshow {
-		max-width: 767px;
-		width: 100%;
-	}
-
-}
-
-@media only screen and (max-width: 767px) {
-	
-	/* Phone */
-	
-	body {
-		min-width: 320px;
-	}
-	
-	.container-980  {
-		min-width: 320px;
-		width: 100%;
-		margin: 0 auto;
-		text-align: left;
-	}
-   
-	.hidden-phone { display: none!important; }
-	.visible-phone { display: block!important; }
-  
- 	.img-left, .alignleft, .img-right, .alignright, .alignnone {
-    	display: block;
-    	float: none;
-    	max-width: 100% !important;
-    	height: auto;
-    	text-align: center;
-    	margin: 0 auto 15px auto!important;
-	}	
-	
-  	.wp-caption {
-    	padding: 5px;
-    	max-width: 46%;
-  	}
-	
-	.wp-caption.alignright {
-		margin-left: 2%;
-		max-width: 44%;
-	}
-	
-	.wp-caption.alignleft {
-		margin-right: 2%;
-		max-width: 44%;
-	}
-	
-  	.wp-caption img { 
-    	max-width: 100%;
-    	height: auto;
-  	}
-
-	/* ----- nav ----- */
-	
-
-	
-	/*----- content -----*/
-	
-	#slideshow {
-		display: none;
-	}
-	
-	/*----- aside -----*/
-	
-	aside {
-		width: auto;
-		display: block;
-	}
-
-	/*----- footer -----*/
-
-	footer {
-		display: block;
-	}
-
 }
 
 /* ==|== non-semantic helper classes ========================================

@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css" media="screen" />
 	<link rel="stylesheet" href="style.css" media="screen" />
 
+
 	<!-- <link rel="stylesheet" href="menu.css" media="screen" /> -->
 	<link rel="stylesheet" href="fonts.css" media="screen" />
 	
@@ -26,14 +27,16 @@
 		
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+		<link rel="stylesheet" href="responsive.css" media="screen" />
 </head>
 <body>
 
 	<nav id="menu">
 	 <a class="closemenu"><img src="images/close.svg"></a>
 		<div class="menuwrap">
-	      <h2>Menu:</h2>
 		   <ul>
+   	       <li><a href="#">Menu</a></li>
 	       <li><a href="#">Video</a></li>
 	       <li><a href="#">Photo</a></li>
 	       <li><a href="#">Press</a></li>
@@ -41,7 +44,7 @@
 	    </ul>
 		
 		<div class="menusocial">
-			<img src="images/facebook.svg" alt="" class="" />
+			<!-- <img src="images/facebook.svg" alt="" class="" /> -->
 			<img src="images/twitter.svg" alt="" class="" />
 			<img src="images/instagram.svg" alt="" class="" />
 		</div>
@@ -130,12 +133,13 @@
 </div>
 </div>
 <!-- STICKY FILTER -->
-	<section class="content container-1024">
-
+	<section class="content container-1650">
+	 <div class="borderwrap">
 		<article>
 
 		<div class="boxes">	
 			<!-- BOX ONE  -->
+			<div class="boxonewrap">
 			<div class="boxsizeone">
 				<img src="images/box1.jpg">
 				<!-- STICKY -->
@@ -178,7 +182,7 @@
 				<!-- STICKY -->
 				<p>06.12.14 | <span>BODY OF WATER</span></p>
 			</div>
-			<div class="boxsizeone">
+			<div class="boxsizeone boxonelast">
 				<img src="images/box3.jpg">
 				<!-- STICKY -->
 				<div class="boxonestickybox">
@@ -200,6 +204,7 @@
 				<p>06.22.14 | <span>ON THE ROAD. DAY 1</span></p>
 			</div>
 			<!-- END BOX ONE -->
+			</div> <!-- box wrap -->
 			
 		<!-- BOX COLUMN -->	
 		<div class="mainBoxCol first">	
@@ -419,6 +424,8 @@
 			
 		</div> <!-- boxes -->
 		</article>
+		
+		</div>  <!-- borderwrap -->
 	</section>
 	<footer class="container-full">
 	<div class="container-1024">
